@@ -1,0 +1,36 @@
+/*
+	$text-primary: #09f
+	$text-secondary: #3cd
+*/
+
+html {
+	color: #333;
+}
+
+a {
+	color: #09f; /* $text-primary */
+}
+
+.bg-primary {
+	background: white;
+}
+
+.bg-secondary {
+	background: #eee;
+}
+
+.text-primary {
+	color: #09f; /* $text-primary */
+}
+
+.text-secondary {
+	color: #3cd; /* $text-secondary */
+}
+
+.border-primary {
+	border-color: #666;
+}
+
+.border-secondary {
+	border-color: #eee;
+}

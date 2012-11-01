@@ -1,0 +1,32 @@
+/* Temporary 2 col layout for type/vertical rhythm testing */
+
+body {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.grid {
+	letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+    text-rendering: optimizespeed;
+}
+
+.grid-unit {
+	display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+    vertical-align: top;
+}
+
+.two-thirds { width: 66.666666%; }
+.one-third { width: 33.3333333%; }
+
+.line-up-1 { margin-top: 16px; }
+.line-up-2 { margin-top: 32px; }
+.line-up-3 { margin-top: 48px; }
+
+.line-down-1 { margin-bottom: 16px; }
+.line-down-2 { margin-bottom: 32px; }
+.line-down-3 { margin-bottom: 48px; }

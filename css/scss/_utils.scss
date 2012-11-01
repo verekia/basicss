@@ -2,10 +2,6 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-
-  -webkit-background-clip: padding-box; 
-     -moz-background-clip: padding; 
-          background-clip: padding-box;
 }
 
 html {
@@ -163,28 +159,3 @@ html {
 .margin-rs { margin-right: 5px !important; }
 .margin-rm { margin-right: 10px !important; }
 .margin-rl { margin-right: 20px !important; }
-
-.radius-tiny {
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
-}
-
-.radius-small {
-	-webkit-border-radius: 5px;
-	        border-radius: 5px;
-}
-
-.radius-medium {
-	-webkit-border-radius: 8px;
-	        border-radius: 8px;
-}
-
-.radius-large {
-	-webkit-border-radius: 12px;
-	        border-radius: 12px;
-}
-
-.radius-max {
-	-webkit-border-radius: 9999px;
-	        border-radius: 9999px;
-}
