@@ -1,0 +1,17 @@
+/* Temporary 2 col layout for type/vertical rhythm testing */
+
+body {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+article {
+	width: 480px;
+	float: left;
+}
+
+aside {
+	width: 300px;
+	float: right;
+}

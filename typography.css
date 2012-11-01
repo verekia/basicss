@@ -1,4 +1,105 @@
+/*
 h1, .h1{font-size:196%; font-weight:normal; font-style: normal; color:#AE0345;}
 h2, .h2{font-size:167%; font-weight:normal; font-style: normal; color:#AE0345;}
 h3, .h3{font-size:146.5%; font-weight:normal; font-style: normal; color:#DF2B72;}
 h4, .h4{font-size:123.1%; font-weight:normal; font-style: normal; color: #333;}
+*/
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+body {
+	line-height: 1.5em;
+}
+
+/*--- HEADINGS ---*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 24px;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+h2 {
+	font-size: 1.375em;
+	line-height: 1.0909em;
+}
+
+h3 {
+	font-size: 1.25em;
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1.125em;
+	line-height: 1.333em;
+}
+
+h5,
+h6 {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*--- PARAGRAPHS ---*/
+
+p {
+	margin-bottom: 24px;
+}
+
+/*--- LISTS ---*/
+
+ul, ol {
+	margin-bottom: 24px;
+}
+
+ul ul,
+ol ol {
+	margin: 0 0 0 60px;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li:before {
+	content: '\2022 ';
+	color: #999;
+	margin: 0 5px 0 -10px;
+}
+
+/*--- QUOTES ---*/
+blockquote {
+  margin: 0 60px 0 45px;
+  border-left: 5px solid #ccc;
+  padding-left: 10px;
+  text-indent: -0.4em;
+}
+
+blockquote b {
+  display: block;
+  text-indent: 0;
+}
+
+/*--- LINKS ---*/
+a {
+  color: #09f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active,
+a:focus {
+  position: relative;
+  top: 1px;
+}
