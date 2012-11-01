@@ -18,14 +18,8 @@
 	float: right;
 }
 
-.obj-start {
-	float: left;
-	margin-right: 10px;
-}
-
-.obj-end {
-	float: right;
-	margin-left: 10px;
+.nbfc {
+    overflow: hidden;
 }
 
 .hidden {
