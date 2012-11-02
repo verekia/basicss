@@ -340,7 +340,8 @@ table {
   border-spacing: 0; }
 
 pre {
-  font-size: 14px; }
+  font-size: 14px;
+  box-shadow: 1px 1px silver; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -596,7 +597,6 @@ html {
 .margin-rl {
   margin-right: 20px !important; }
 
-/* Temporary 2 col layout for type/vertical rhythm testing */
 body {
   width: 100%;
   max-width: 900px;
@@ -725,6 +725,10 @@ body {
 .line-bottom-12 {
   margin-bottom: 288px; }
 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .grid-unit {
+    width: 100%!important; } }
 /*
 h1, .h1{font-size:196%; font-weight:normal; font-style: normal; color:#AE0345;}
 h2, .h2{font-size:167%; font-weight:normal; font-style: normal; color:#AE0345;}
