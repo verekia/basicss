@@ -24,33 +24,37 @@ body {
 
 /*--- HEADINGS ---*/
 
-h1, h2, h3, h4, h5, h6 {
-	margin-bottom: $base-line-height +px;
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+	margin: 0 0 $base-line-height +px;
 	font-weight: bold;
+	position: relative;
 }
 
-h1 {
+h1,
+.h1 {
+	top: -0.125rem;
 	@include font-size(24)
 }
 
-h2 {
+h2,
+.h2 {
+	top: -0.125rem;
 	@include font-size(22)
 }
 
-h3 {
+h3,
+.h3 {
 	@include font-size(20)
 }
 
-h4 {
+h4,
+.h4 {
 	@include font-size(18)
 }
 
-h5,
-h6 {
-	@include font-size(16)
-}
-
 .huge-text {
+	top: 0.5rem;
 	@include font-size(96)
 }
 
@@ -63,7 +67,7 @@ p {
 /*--- LISTS ---*/
 
 ul, ol {
-	margin: $base-line-height*(3/4) +px 0;
+	margin: 0 0 $base-line-height +px;
 }
 
 ul ul,

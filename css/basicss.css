@@ -737,37 +737,40 @@ body {
   line-height: 24px; }
 
 /*--- HEADINGS ---*/
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 24px;
-  font-weight: bold; }
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  margin: 0 0 24px;
+  font-weight: bold;
+  position: relative; }
 
-h1 {
+h1,
+.h1 {
+  top: -0.125rem;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1; }
 
-h2 {
+h2,
+.h2 {
+  top: -0.125rem;
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 1.09091; }
 
-h3 {
+h3,
+.h3 {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2; }
 
-h4 {
+h4,
+.h4 {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333; }
 
-h5,
-h6 {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
-
 .huge-text {
+  top: 0.5rem;
   font-size: 96px;
   font-size: 6rem;
   line-height: 1; }
@@ -778,7 +781,7 @@ p {
 
 /*--- LISTS ---*/
 ul, ol {
-  margin: 18px 0; }
+  margin: 0 0 24px; }
 
 ul ul,
 ol ol {
@@ -815,7 +818,7 @@ a:focus {
 
 .block-list-item {
   display: block;
-  padding: 6px 20px;
+  padding: 12px 20px;
   text-decoration: none;
   background: #eee; }
 
@@ -830,5 +833,5 @@ a:focus {
 
 .btn {
   display: inline-block;
-  padding: 5px;
+  padding: 6px;
   background: #eeeeee; }
