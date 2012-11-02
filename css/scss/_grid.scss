@@ -19,10 +19,16 @@ body {
     word-spacing: normal;
     text-rendering: auto;
     vertical-align: top;
+
+    /* Create gutter with left and right padding */
+    padding: 0 $gutter-width/2 +px;
 }
 
-.two-thirds { width: 66.666666%; }
-.one-third { width: 33.3333333%; }
+@for $i from 1 through $columns {
+    .unit-#{$i} {
+        width: percentage($i/$columns);
+    }
+}
 
 @for $i from 1 through 12 {
     .line-top-#{$i} {

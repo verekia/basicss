@@ -607,13 +607,45 @@ body {
   letter-spacing: normal;
   word-spacing: normal;
   text-rendering: auto;
-  vertical-align: top; }
+  vertical-align: top;
+  /* Create gutter with left and right padding */
+  padding: 0 10px; }
 
-.two-thirds {
-  width: 66.666666%; }
+.unit-1 {
+  width: 8.33333%; }
 
-.one-third {
-  width: 33.3333333%; }
+.unit-2 {
+  width: 16.66667%; }
+
+.unit-3 {
+  width: 25%; }
+
+.unit-4 {
+  width: 33.33333%; }
+
+.unit-5 {
+  width: 41.66667%; }
+
+.unit-6 {
+  width: 50%; }
+
+.unit-7 {
+  width: 58.33333%; }
+
+.unit-8 {
+  width: 66.66667%; }
+
+.unit-9 {
+  width: 75%; }
+
+.unit-10 {
+  width: 83.33333%; }
+
+.unit-11 {
+  width: 91.66667%; }
+
+.unit-12 {
+  width: 100%; }
 
 .line-top-1 {
   margin-top: 24px; }
