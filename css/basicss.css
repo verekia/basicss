@@ -1,27 +1,20 @@
-/*
-	$text-primary: #09f
-	$text-secondary: #3cd
-*/
 html {
-  color: #333; }
-
-a {
-  color: #09f;
-  /* $text-primary */ }
-
-.bg-primary {
-  background: white; }
-
-.bg-secondary {
-  background: #eee; }
+  color: #333333; }
 
 .text-primary {
-  color: #09f;
-  /* $text-primary */ }
+  color: #0099ff; }
+
+a {
+  color: #0099ff; }
 
 .text-secondary {
-  color: #3cd;
-  /* $text-secondary */ }
+  color: #33ccdd; }
+
+.bg-primary {
+  background-color: white; }
+
+.bg-secondary {
+  background-color: #eeeeee; }
 
 .border-primary {
   border-color: #666; }
@@ -621,23 +614,77 @@ body {
 .one-third {
   width: 33.3333333%; }
 
-.line-up-1 {
+.line-top-1 {
   margin-top: 16px; }
 
-.line-up-2 {
+.line-top-2 {
   margin-top: 32px; }
 
-.line-up-3 {
+.line-top-3 {
   margin-top: 48px; }
 
-.line-down-1 {
-  margin-bottom: 16px; }
+.line-top-4 {
+  margin-top: 64px; }
 
-.line-down-2 {
-  margin-bottom: 32px; }
+.line-top-5 {
+  margin-top: 80px; }
 
-.line-down-3 {
-  margin-bottom: 48px; }
+.line-top-6 {
+  margin-top: 96px; }
+
+.line-top-7 {
+  margin-top: 112px; }
+
+.line-top-8 {
+  margin-top: 128px; }
+
+.line-top-9 {
+  margin-top: 144px; }
+
+.line-top-10 {
+  margin-top: 160px; }
+
+.line-top-11 {
+  margin-top: 176px; }
+
+.line-top-12 {
+  margin-top: 192px; }
+
+.line-bottom-1 {
+  margin-top: 16px; }
+
+.line-bottom-2 {
+  margin-top: 32px; }
+
+.line-bottom-3 {
+  margin-top: 48px; }
+
+.line-bottom-4 {
+  margin-top: 64px; }
+
+.line-bottom-5 {
+  margin-top: 80px; }
+
+.line-bottom-6 {
+  margin-top: 96px; }
+
+.line-bottom-7 {
+  margin-top: 112px; }
+
+.line-bottom-8 {
+  margin-top: 128px; }
+
+.line-bottom-9 {
+  margin-top: 144px; }
+
+.line-bottom-10 {
+  margin-top: 160px; }
+
+.line-bottom-11 {
+  margin-top: 176px; }
+
+.line-bottom-12 {
+  margin-top: 192px; }
 
 /*
 h1, .h1{font-size:196%; font-weight:normal; font-style: normal; color:#AE0345;}
@@ -737,3 +784,8 @@ a:focus {
 
 .block-list-item:hover {
   background: #f9f9f9; }
+
+.btn {
+  display: inline-block;
+  padding: 5px;
+  background: #eeeeee; }

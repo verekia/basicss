@@ -1,36 +1,29 @@
-/*
-	$text-primary: #09f
-	$text-secondary: #3cd
-*/
+// Normal Text
 
-html {
-	color: #333;
-}
+$text-normal: #333;
+html { color: $text-normal }
 
-a {
-	color: #09f; /* $text-primary */
-}
+// Theme Colors
 
-.bg-primary {
-	background: white;
-}
+$text-primary: #09f;
+.text-primary { color: $text-primary }
+a { color: $text-primary }
 
-.bg-secondary {
-	background: #eee;
-}
+$text-secondary: #3cd;
+.text-secondary { color: $text-secondary }
 
-.text-primary {
-	color: #09f; /* $text-primary */
-}
+// Background Colors
 
-.text-secondary {
-	color: #3cd; /* $text-secondary */
-}
+$bg-primary: #fff;
+.bg-primary { background-color: $bg-primary }
 
-.border-primary {
-	border-color: #666;
-}
+$bg-secondary: #eee;
+.bg-secondary { background-color: $bg-secondary }
 
-.border-secondary {
-	border-color: #eee;
-}
+// Border Colors
+
+$border-primary: #666;
+.border-primary { border-color: #666 }
+
+$border-secondary: #eee;
+.border-secondary { border-color: #eee }
