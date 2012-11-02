@@ -340,7 +340,8 @@ table {
   border-spacing: 0; }
 
 pre {
-  font-size: 14px; }
+  font-size: 14px;
+  box-shadow: 1px 1px silver; }
 
 * {
   -webkit-box-sizing: border-box;
