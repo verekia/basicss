@@ -16,6 +16,9 @@ a {
 .bg-secondary {
   background-color: #eeeeee; }
 
+.bg-tertiary {
+  background-color: #dddddd; }
+
 .border-primary {
   border-color: #666; }
 
