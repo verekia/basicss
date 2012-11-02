@@ -1,0 +1,6 @@
+/* Breaks when the child of li is a block */
+.bullet-list li:before {
+	content: '\2022 ';
+	color: #999;
+	margin: 0 5px 0 -10px;
+}

@@ -1,0 +1,32 @@
+// Normal Text
+
+$text-normal: #333;
+html { color: $text-normal }
+
+// Theme Colors
+
+$text-primary: #09f;
+.text-primary { color: $text-primary }
+a { color: $text-primary }
+
+$text-secondary: #3cd;
+.text-secondary { color: $text-secondary }
+
+// Background Colors
+
+$bg-primary: #fff;
+.bg-primary { background-color: $bg-primary }
+
+$bg-secondary: #eee;
+.bg-secondary { background-color: $bg-secondary }
+
+$bg-tertiary: #ddd;
+.bg-tertiary { background-color: $bg-tertiary }
+
+// Border Colors
+
+$border-primary: #666;
+.border-primary { border-color: #666 }
+
+$border-secondary: #eee;
+.border-secondary { border-color: #eee }

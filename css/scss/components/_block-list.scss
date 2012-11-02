@@ -1,0 +1,14 @@
+.block-list {
+	padding: 0;
+}
+
+.block-list-item {
+	display: block;
+	padding: $base-line-height/2 +px 20px;
+	text-decoration: none;
+	background: #eee;
+}
+
+.block-list-item:hover {
+	background: #f9f9f9;
+}

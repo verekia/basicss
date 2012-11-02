@@ -1,0 +1,48 @@
+body {
+	width: 100%;
+    max-width: 900px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.grid {
+	letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+    text-rendering: optimizespeed;
+}
+
+.grid-unit {
+	display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+    vertical-align: top;
+
+    /* Create gutter with left and right padding */
+    padding: 0 $gutter-width/2 +px;
+}
+
+@for $i from 1 through $columns {
+    .unit-#{$i} {
+        width: percentage($i/$columns);
+    }
+}
+
+@for $i from 1 through 12 {
+    .line-top-#{$i} {
+        margin-top: $base-line-height * $i +px;    
+    }
+}
+
+@for $i from 1 through 12 {
+    .line-bottom-#{$i} {
+        margin-bottom: $base-line-height * $i +px;    
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .grid-unit {
+        width: 100%!important;
+    }
+}

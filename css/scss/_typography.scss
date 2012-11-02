@@ -1,0 +1,108 @@
+/*
+h1, .h1{font-size:196%; font-weight:normal; font-style: normal; color:#AE0345;}
+h2, .h2{font-size:167%; font-weight:normal; font-style: normal; color:#AE0345;}
+h3, .h3{font-size:146.5%; font-weight:normal; font-style: normal; color:#DF2B72;}
+h4, .h4{font-size:123.1%; font-weight:normal; font-style: normal; color: #333;}
+*/
+
+
+@mixin font-size($font-size) {
+	font-size:$font-size +px;
+    font-size:$font-size / $base-font-size +rem;
+    line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  background: url($img_path + '/vertical.png');
+}
+
+body {
+	line-height: $base-line-height +px;
+}
+
+/*--- HEADINGS ---*/
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+	margin: 0 0 $base-line-height +px;
+	font-weight: bold;
+	position: relative;
+}
+
+h1,
+.h1 {
+	top: -0.125rem;
+	@include font-size(24)
+}
+
+h2,
+.h2 {
+	top: -0.125rem;
+	@include font-size(22)
+}
+
+h3,
+.h3 {
+	@include font-size(20)
+}
+
+h4,
+.h4 {
+	@include font-size(18)
+}
+
+.huge-text {
+	top: 0.5rem;
+	@include font-size(96)
+}
+
+/*--- PARAGRAPHS ---*/
+
+p {
+	margin: 0 0 $base-line-height +px;
+}
+
+/*--- LISTS ---*/
+
+ul, ol {
+	margin: 0 0 $base-line-height +px;
+}
+
+ul ul,
+ol ol {
+	margin: 0 0 0 60px;
+}
+
+ul {
+	list-style: none;
+}
+
+/*--- QUOTES ---*/
+blockquote {
+  margin: 0 60px 0 45px;
+  border-left: 5px solid #ccc;
+  padding-left: 10px;
+  text-indent: -0.4em;
+}
+
+blockquote b {
+  display: block;
+  text-indent: 0;
+}
+
+/*--- LINKS ---*/
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active,
+a:focus {
+  position: relative;
+  top: 1px;
+}

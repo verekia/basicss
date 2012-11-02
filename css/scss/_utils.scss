@@ -2,10 +2,6 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-
-  -webkit-background-clip: padding-box; 
-     -moz-background-clip: padding; 
-          background-clip: padding-box;
 }
 
 html {
@@ -32,7 +28,7 @@ html {
 	float: right;
 }
 
-.nbfc {
+.bfc {
     overflow: hidden;
 }
 
@@ -83,26 +79,26 @@ html {
 /* All */
 
 .padding-an { padding: 0 !important; }
-.padding-as { padding: 5px !important; }
-.padding-am { padding: 10px !important; }
-.padding-al { padding: 20px !important; }
+.padding-as { padding: $base-line-height/4 +px !important; }
+.padding-am { padding: $base-line-height/2 +px !important; }
+.padding-al { padding: $base-line-height +px 20px !important; }
 
 .margin-an { margin: 0 !important; }
-.margin-as { margin: 5px !important; }
-.margin-am { margin: 10px !important; }
-.margin-al { margin: 20px !important; }
+.margin-as { margin: $base-line-height/4 +px 5px !important; }
+.margin-am { margin: $base-line-height/2 +px 10px !important; }
+.margin-al { margin: $base-line-height +px 20px !important; }
 
 /* Vertical */
 
 .padding-vn { padding-top: 0 !important; padding-bottom: 0 !important; }
-.padding-vs { padding-top: 5px !important; padding-bottom: 5px !important; }
-.padding-vm { padding-top: 10px !important; padding-bottom: 10px !important; }
-.padding-vl { padding-top: 20px !important; padding-bottom: 20px !important; }
+.padding-vs { padding-top: $base-line-height/4 +px !important; padding-bottom: $base-line-height/4 +px !important; }
+.padding-vm { padding-top: $base-line-height/2 +px !important; padding-bottom: $base-line-height/2 +px !important; }
+.padding-vl { padding-top: $base-line-height +px !important; padding-bottom: $base-line-height +px !important; }
 
 .margin-vn { margin-top: 0 !important; margin-bottom: 0 !important; }
-.margin-vs { margin-top: 5px !important; margin-bottom: 5px !important; }
-.margin-vm { margin-top: 10px !important; margin-bottom: 10px !important; }
-.margin-vl { margin-top: 20px !important; margin-bottom: 20px !important; }
+.margin-vs { margin-top: $base-line-height/4 +px !important; margin-bottom: $base-line-height/4 +px !important; }
+.margin-vm { margin-top: $base-line-height/2 +px !important; margin-bottom: $base-line-height/2 +px !important; }
+.margin-vl { margin-top: $base-line-height +px !important; margin-bottom: $base-line-height +px !important; }
 
 /* Horizontal */
 
@@ -119,26 +115,26 @@ html {
 /* Top */
 
 .padding-tn { padding-top: 0 !important; }
-.padding-ts { padding-top: 5px !important; }
-.padding-tm { padding-top: 10px !important; }
-.padding-tl { padding-top: 20px !important; }
+.padding-ts { padding-top: $base-line-height/4 +px !important; }
+.padding-tm { padding-top: $base-line-height/2 +px !important; }
+.padding-tl { padding-top: $base-line-height +px !important; }
 
 .margin-tn { margin-top: 0 !important; }
-.margin-ts { margin-top: 5px !important; }
-.margin-tm { margin-top: 10px !important; }
-.margin-tl { margin-top: 20px !important; }
+.margin-ts { margin-top: $base-line-height/4 +px !important; }
+.margin-tm { margin-top: $base-line-height/2 +px !important; }
+.margin-tl { margin-top: $base-line-height +px !important; }
 
 /* Bottom */
 
 .padding-bn { padding-bottom: 0 !important; }
-.padding-bs { padding-bottom: 5px !important; }
-.padding-bm { padding-bottom: 10px !important; }
-.padding-bl { padding-bottom: 20px !important; }
+.padding-bs { padding-bottom: $base-line-height/4 +px !important; }
+.padding-bm { padding-bottom: $base-line-height/2 +px !important; }
+.padding-bl { padding-bottom: $base-line-height +px !important; }
 
 .margin-bn { margin-bottom: 0 !important; }
-.margin-bs { margin-bottom: 5px !important; }
-.margin-bm { margin-bottom: 10px !important; }
-.margin-bl { margin-bottom: 20px !important; }
+.margin-bs { margin-bottom: $base-line-height/4 +px !important; }
+.margin-bm { margin-bottom: $base-line-height/2 +px !important; }
+.margin-bl { margin-bottom: $base-line-height +px !important; }
 
 /* Left */
 
@@ -163,28 +159,3 @@ html {
 .margin-rs { margin-right: 5px !important; }
 .margin-rm { margin-right: 10px !important; }
 .margin-rl { margin-right: 20px !important; }
-
-.radius-tiny {
-	-webkit-border-radius: 3px;
-	        border-radius: 3px;
-}
-
-.radius-small {
-	-webkit-border-radius: 5px;
-	        border-radius: 5px;
-}
-
-.radius-medium {
-	-webkit-border-radius: 8px;
-	        border-radius: 8px;
-}
-
-.radius-large {
-	-webkit-border-radius: 12px;
-	        border-radius: 12px;
-}
-
-.radius-max {
-	-webkit-border-radius: 9999px;
-	        border-radius: 9999px;
-}
