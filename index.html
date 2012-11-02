@@ -20,27 +20,25 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <pre><div></pre>
         <div class="grid">
-            <div class="grid-unit unit-8">
+            <div class="grid-unit unit-12">
                 <h1 class="huge-text line-top-3">BasiCSS</h1>
 
                 <h2>Typography</h2>
                 <p>
-                    BasiCSS features a consitent vertical rhythm. 
+                    BasiCSS features a consitent vertical rhythm. This means that all the text sits on the same baseline. Font size, line-heights, and vertical margins are all based off your base values:
                 </p>
-                <ul class="bullet-list">
-                    <li>Lightweight</li>
-                    <li>Flexible</li>
-                    <li>Minimal</li>
-                </ul>
+                <pre class="bg-secondary padding-hm margin-vl">
+<span class="text-primary">$base-font-size</span>: 16 !default
+<span class="text-secondary">$base-line-height</span>: 24 !default 
+</pre>
 
                 <h2>No media object</h2>
                 <p>
                     What is a media object? It's just a clearfixed container, a floating image with some margin, and a text that doesn't go under the image (aka a <a href="http://www.w3.org/TR/CSS2/visuren.html#block-formatting">Block Formatting Context</a>). It's simple to use generic classes that are not "media object only" to achieve this. Here is how we do it:
                 </p>
 
-                    <pre class="bg-secondary padding-hm">
+                    <pre class="bg-secondary padding-hm margin-vl">
 &lt;div class=&quot;<span class="text-primary">cf</span>&quot;&gt;
     &lt;img class=&quot;<span class="text-primary">fl margin-rm</span>&quot; src=&quot;the-image.jpg&quot; alt=&quot;&quot;&gt;
     &lt;p class=&quot;<span class="text-primary">bfc</span>&quot;&gt;
@@ -56,121 +54,124 @@
                 </div>
                 <h2>Sass and OOCSS colors</h2>
                 <p>OOCSS is great to easily apply a color to an element. Not so great to avoid repetitions and copy/pasting. By combining it with Sass, we get the best of 2 worlds and keep our code DRY:</p>
-                <pre class="bg-secondary padding-hm">
+                <pre class="bg-secondary padding-hm margin-vl">
 <span class="text-primary">$text-primary</span>: #09f;
 <span class="text-secondary">.text-primary</span> { color: <span class="text-primary">$text-primary</span> }
 </pre>
                 <h2>Buttons</h2>
                 <a class="btn" href="#">Button</a>
             </div>
-            <div class="grid-unit unit-4 line-top-9">
-                <ul class="block-list radius-large margin-vm">
-                    <li><a class="block-list-item" href="#">OOCSS</a></li>
-                    <li><a class="block-list-item" href="#">Typography</a></li>
-                    <li><a class="block-list-item" href="#">Responsive</a></li>
-                    <li><a class="block-list-item" href="#">Blank styles</a></li>
-                </ul>
-            </div>
         </div>
 
         <div class="grid margin-tl">
             <div class="grid-unit unit-12"> 
                 <h2>Grid</h2>
+                <p>BasiCSS&rsquo;s 12-column grid is fluid,responsive, and totally nest-able.</p>
+                <pre>
+&lt;div class=&quot;<span class="text-primary">grid</span>&quot;&gt;
+    &lt;div class=&quot;<span class="text-primary">grid-unit unit-3</span>&quot;&gt;
+        <em class="text-secondary">some sidebar content</em>
+    &lt;/div&gt;
+    &lt;div class=&quot;<span class="text-primary">grid-unit unit-9</span>&quot;&gt;
+        <em class="text-secondary">some main content</em>
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
             </div>
         </div>
 
         <div class="grid text-center margin-ts margin-bm">
             <div class="grid-unit unit-2">
-                <div class="bg-secondary padding-vs">2</div>
+                <div class="bg-secondary padding-vs">.unit-2</div>
             </div>
             <div class="grid-unit unit-2">
-                <div class="bg-secondary padding-vs">2</div>
+                <div class="bg-secondary padding-vs">.unit-2</div>
             </div>
             <div class="grid-unit unit-2">
-                <div class="bg-secondary padding-vs">2</div>
+                <div class="bg-secondary padding-vs">.unit-2</div>
             </div>
             <div class="grid-unit unit-2">
-                <div class="bg-secondary padding-vs">2</div>
+                <div class="bg-secondary padding-vs">.unit-2</div>
             </div>
             <div class="grid-unit unit-2">
-                <div class="bg-secondary padding-vs">2</div>
+                <div class="bg-secondary padding-vs">.unit-2</div>
             </div>
             <div class="grid-unit unit-2">
-                <div class="bg-secondary padding-vs">2</div>
+                <div class="bg-secondary padding-vs">.unit-2</div>
             </div>
         </div>
 
         <div class="grid text-center margin-bm">
             <div class="grid-unit unit-3">
-                <div class="bg-secondary padding-vs">3</div>
+                <div class="bg-secondary padding-vs">.unit-3</div>
             </div>
             <div class="grid-unit unit-3">
-                <div class="bg-secondary padding-vs">3</div>
+                <div class="bg-secondary padding-vs">.unit-3</div>
             </div>
             <div class="grid-unit unit-3">
-                <div class="bg-secondary padding-vs">3</div>
+                <div class="bg-secondary padding-vs">.unit-3</div>
             </div>
             <div class="grid-unit unit-3">
-                <div class="bg-secondary padding-vs">3</div>
+                <div class="bg-secondary padding-vs">.unit-3</div>
             </div>
         </div>
 
         <div class="grid text-center margin-bm">
             <div class="grid-unit unit-4">
-                <div class="bg-secondary padding-vs">4</div>
+                <div class="bg-secondary padding-vs">.unit-4</div>
             </div>
             <div class="grid-unit unit-4">
-                <div class="bg-secondary padding-vs">4</div>
+                <div class="bg-secondary padding-vs">.unit-4</div>
             </div>
             <div class="grid-unit unit-4">
-                <div class="bg-secondary padding-vs">4</div>
+                <div class="bg-secondary padding-vs">.unit-4</div>
             </div>
         </div>
 
         <div class="grid text-center margin-bm">
             <div class="grid-unit unit-3">
-                <div class="bg-secondary padding-vs">3</div>
+                <div class="bg-secondary padding-vs">.unit-3</div>
             </div>
             <div class="grid-unit unit-9">
-                <div class="bg-secondary padding-vs">9</div>
+                <div class="bg-secondary padding-vs">.unit-9</div>
             </div>
         </div>
 
         <div class="grid text-center margin-bm">
             <div class="grid-unit unit-4">
-                <div class="bg-secondary padding-vs">4</div>
+                <div class="bg-secondary padding-vs">.unit-4</div>
             </div>
             <div class="grid-unit unit-8">
-                <div class="bg-secondary padding-vs">8</div>
+                <div class="bg-secondary padding-vs">.unit-8</div>
             </div>
         </div>
 
         <div class="grid text-center margin-bm">
             <div class="grid-unit unit-4">
                 <div class="bg-secondary padding-vs"> 
-                    <p class="margin-bs">4</p>
+                    <p class="margin-bs">.unit-4</p>
                     <div class="grid">    
                         <div class="grid-unit unit-6">
-                            <div class="bg-tertiary padding-vs">1/2</div>
+                            <div class="bg-tertiary padding-vs">.unit-6</div>
                         </div>
                         <div class="grid-unit unit-6">
-                            <div class="bg-tertiary padding-vs">1/2</div>
+                            <div class="bg-tertiary padding-vs">.unit-6</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="grid-unit unit-8">
                 <div class="bg-secondary padding-vs">
-                    <p class="margin-bs">8</p>
+                    <p class="margin-bs">.unit-8</p>
                     <div class="grid">    
                         <div class="grid-unit unit-3">
-                            <div class="bg-tertiary padding-vs">1/3</div>
+                            <div class="bg-tertiary padding-vs">.unit-3</div>
                         </div>
                         <div class="grid-unit unit-3">
-                            <div class="bg-tertiary padding-vs">1/3</div>
+                            <div class="bg-tertiary padding-vs">.unit-3</div>
                         </div>
                         <div class="grid-unit unit-6">
-                            <div class="bg-tertiary padding-vs">1/2</div>
+                            <div class="bg-tertiary padding-vs">.unit-6</div>
                         </div>
                     </div>
                 </div>
