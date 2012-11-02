@@ -19,6 +19,8 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
+
+        <pre><div></pre>
         <div class="grid">
             <div class="grid-unit unit-8">
                 <h1 class="huge-text line-top-3">BasiCSS</h1>
@@ -33,25 +35,31 @@
                     <li>Minimal</li>
                 </ul>
 
-                <h2>Media-object-ish</h2>
-                <div class="cf margin-vm">
-                    <img class="fl margin-rm" src="img/molly.jpg" alt="">
-                    <p class="nbfc">
-                        There are a lot of places to get a gyro on Monroe St, but Golden Fleece seemed to be calling us. Literally. There were two dudes waiting for take out near the doorway telling us how great it was. Turns out these two dudes were right. 
-                    </p>
-                </div>
-                <div class="cf margin-vm">
-                    <img class="fl margin-rm" src="img/sven.jpg" alt="">
-                    <p class="nbfc">
-                    Just the best chocolate croissant and almond croissant I've eaten in my whole French life! The owners are a French couple and they also manage the San Francisco Bakery Institute. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-                </div>
+                <h2>No media object</h2>
+                <p>
+                    What is a media object? It's just a clearfixed container, a floating image with some margin, and a text that doesn't go under the image (aka a <a href="http://www.w3.org/TR/CSS2/visuren.html#block-formatting">Block Formatting Context</a>). It's simple to use generic classes that are not "media object only" to achieve this. Here is how we do it:
+                </p>
+
+                    <pre class="bg-secondary padding-hm">
+&lt;div class=&quot;<span class="text-primary">cf</span>&quot;&gt;
+    &lt;img class=&quot;<span class="text-primary">fl margin-rm</span>&quot; src=&quot;the-image.jpg&quot; alt=&quot;&quot;&gt;
+    &lt;p class=&quot;<span class="text-primary">bfc</span>&quot;&gt;
+        The text
+    &lt;/p&gt;
+&lt;/div&gt;
+</pre>
                 <div class="cf margin-vm">
                     <img class="fl margin-rm" src="img/yoni.jpg" alt="">
-                    <p class="nbfc">
+                    <p class="bfc">
                         Around this office this place is not known as Perilla. That's just it's mortal name. Instead it's better known by the mythical name that has been given to this business by Demeter, The Greek Goddess of Harvest, Bread and Grain.
                     </p>
                 </div>
+                <h2>Sass and OOCSS colors</h2>
+                <p>OOCSS is great to easily apply a color to an element. Not so great to avoid repetitions and copy/pasting. By combining it with Sass, we get the best of 2 worlds and keep our code DRY:</p>
+                <pre class="bg-secondary padding-hm">
+<span class="text-primary">$text-primary</span>: #09f;
+<span class="text-secondary">.text-primary</span> { color: <span class="text-primary">$text-primary</span> }
+</pre>
                 <h2>Buttons</h2>
                 <a class="btn" href="#">Button</a>
             </div>
