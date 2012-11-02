@@ -26,12 +26,12 @@ body {
 
 @for $i from 1 through 12 {
     .line-top-#{$i} {
-        margin-top: 16px * $i;    
+        margin-top: $base-line-height * $i +px;    
     }
 }
 
 @for $i from 1 through 12 {
     .line-bottom-#{$i} {
-        margin-top: 16px * $i;    
+        margin-bottom: $base-line-height * $i +px;    
     }
 }

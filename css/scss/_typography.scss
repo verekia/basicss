@@ -6,6 +6,11 @@ h4, .h4{font-size:123.1%; font-weight:normal; font-style: normal; color: #333;}
 */
 
 
+@mixin font-size($font-size) {
+	font-size:$font-size +px;
+    font-size:$font-size / $base-font-size +rem;
+    line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+}
 
 html {
   font-family: Helvetica, Arial, sans-serif;
@@ -14,56 +19,51 @@ html {
 }
 
 body {
-	line-height: 1.5em;
+	line-height: $base-line-height +px;
 }
 
 /*--- HEADINGS ---*/
 
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom: 24px;
+	margin-bottom: $base-line-height +px;
 	font-weight: bold;
 }
 
 h1 {
-	font-size: 1.5em;
-	line-height: 1em;
+	@include font-size(24)
 }
 
 h2 {
-	font-size: 1.375em;
-	line-height: 1.0909em;
+	@include font-size(22)
 }
 
 h3 {
-	font-size: 1.25em;
-	font-size: 1.2em;
+	@include font-size(20)
 }
 
 h4 {
-	font-size: 1.125em;
-	line-height: 1.333em;
+	@include font-size(18)
 }
 
 h5,
 h6 {
-	font-size: 1em;
-	line-height: 1.5em;
+	@include font-size(16)
 }
 
 .huge-text {
-	font-size: 6em;
+	@include font-size(96)
 }
 
 /*--- PARAGRAPHS ---*/
 
 p {
-	margin: 0 0 24px;
+	margin: 0 0 $base-line-height +px;
 }
 
 /*--- LISTS ---*/
 
 ul, ol {
-	margin-bottom: 24px;
+	margin: $base-line-height*(3/4) +px 0;
 }
 
 ul ul,
