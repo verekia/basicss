@@ -75,13 +75,6 @@ ul {
 	list-style: none;
 }
 
-/* Breaks when the child of li is a block */
-.bullet-list li:before {
-	content: '\2022 ';
-	color: #999;
-	margin: 0 5px 0 -10px;
-}
-
 /*--- QUOTES ---*/
 blockquote {
   margin: 0 60px 0 45px;
